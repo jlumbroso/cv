@@ -1,0 +1,17 @@
+~< extends "section.tex" >~
+
+~< block body >~
+~< for p in items >~
+\subsection{<<p.type>>}
+  \begin{itemize}
+    ~< for student in p.students >~
+      \item << student.name >>, \textit{<< student.topic >>} \hfill << student['period'] >>
+      ~< if student.details >~
+        \begin{itemize}
+        \item << student.details >>
+        \end{itemize}
+      ~< endif >~
+    ~< endfor >~
+  \end{itemize}
+~< endfor >~
+~< endblock body >~

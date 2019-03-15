@@ -26,10 +26,11 @@ order:
   - [education, Education]
   - [teaching, Teaching Experience]
   #- [research, Research Experience]
+  - [projects, Selected Projects]
+  - [advised_students, Selected Advised Students]
   - [selected_publications, Selected Publications]
   # - [NEWPAGE, NEWPAGE]
   #- [industry, Industry Experience]
-  - [projects, Projects]
   #- [coursework, CMU Graduate Coursework]
   #- [honors, Honors \& Awards]
   #- [skills, Skills]
@@ -234,11 +235,11 @@ teaching:
     name: Intro CS1
     short: CMPT 225
     position: Lead Instructor
-  - semester: F2015,S2016,F2017
+  - semester: F2015, S2016, F2017
     name: Intro CS1
     short: COS 126
     position: Co-Lead Preceptor
-  - semester: F2014,S2015,F2016,S2017
+  - semester: F2014, S2015, F2016, S2017
     name: Intro CS2
     short: COS 226
     position: Co-Lead Preceptor, Instructor
@@ -256,6 +257,24 @@ teaching:
     position: Lead Preceptor
 
 projects:
+  - name: code{\bf Post}
+    url: https://codepost.io
+    details:
+      - Tool designed to streamline grading code assignments, and managing 100s+ ugrad. graders
+      - Introduced in Fall 2015, has graded 30k+ submissions, for 3k+ students and 20+ courses
+      - Initially advised collaborator James Evans as ugrad. (2014-2016); now expanding in 2019
+  - name: TigerUHR
+    url: https://tigeruhr.io
+    details:
+      - Tool designed to streamline the application, hiring, management of ugrad. workers
+      - Introduced in Fall 2016, has allowed us to transition from hiring ~20 ugrads. across 5 positions, to as of 2019 hiring ~350 across 14 positions
+      - Aggregate data allows to better match students to jobs; and maintain satisfaction
+  - name: Quizzera
+    url: https://quizzera.io
+  - name: LabQueue
+    url: https://labqueue.io
+  - name: Anki Facecards
+    url: https://labqueue.io
   # - name: Personal Blog and Website
   #   url: http://bamos.github.io
   #   details:
@@ -265,6 +284,83 @@ projects:
   #       listed by highest frequency.'
   #     - Python, Bash, Linux, LaTeX, Fortran, Android, Scala, News,
   #       JavaScript, Zsh, C++, OpenMP, Lua, Make, Mathematica, mpv
+
+advised_students:
+  - type: Masters Thesis
+    students:
+      - name: Lance Goodridge
+        period: 2017-2019
+        topic: "Automation to Manage Undergraduate Teaching Assistants"
+      - name: Alexander Iriza
+        period: 2014-2015
+        topic:
+          "Enumeration and Random Generation of Unlabeled Classes of Graphs:
+          A Practical Study of Cycle Pointing and the Dissymmetry Theorem"
+  - type: Undergraduate Individual IW or Thesis
+    students:
+      - name: Matt Harrington
+        period: 2018-2019
+        topic: Automatic Tagging of Rubik's Cube Data Set
+      - name: S. H. Clarke
+        period: Spr.  2018
+        topic: "Keep Asking: A System For Repeatedly Collecting Feedback"
+      - name: Perry Cate
+        period: Spr.  2018
+        topic: "Uniform Chat API"
+      - name: Casey Chow
+        period: Spr.  2018
+        topic: "Chive: A Backchannel for University Lectures"
+      - name: Rushy Panchal
+        period: F.  2017
+        topic: "Sera: Software Enclaves for REST APIs"
+      - name: Leila Clark
+        period: 2017-2018
+        topic: "Costutor: An intelligent tutor for introductory C. S. students"
+      - name: Victor Du
+        period: Spr.  2017
+        topic: "Pair Programming: Literature Review + Implications for Princeton COS"
+      - name: Mitchell Hamburger
+        period: Spr.  2017
+        topic: "COS Leaderboards: A Project In Gamification"
+      - name: Diana Liao
+        period: Spr.  2017
+        topic: "Lab Queue"
+      - name: Sam Pritt
+        period: 2016-2017
+        topic: "Algorithmic Enumeration of Combinatorial Structures"
+      - name: Maryam Bahrani
+        period: 2016-2017
+        topic: "Enumerating Unlabeled Cactus Graphs"
+      - name: Naphat Sanguansin
+        period: Spr.  2016
+        topic: "TigerHost: A deployment service for student projects"
+      - name: Lance Goodridge
+        period: Spr.  2016
+        topic: "TigerUHR: A Management System for Undergraduate Resources"
+      - name: Jessica Shi
+        period: Spr.  2016
+        topic: "Tight exponential bounds from vertex incremental characterizations"
+      - name: Hee Joo Name
+        period: Spr.  2016
+        topic: "Understanding Student Performance through Intermediary Code: Submission for Princeton's Introductory Computer Science Course"
+      - name: Dyland Xue
+        period: Spr.  2016
+        topic: "Scooby: A Lightweight Web Scraping Framework"
+      - name: J. Shi
+        period: F.  2015
+        topic: "Enumerating unlabeled graph classes: Tree decompositions and other approaches"
+      - name: Annie Chu
+        period: F.  2015
+        topic: "Efficient Generation of Random Heaps"
+      - name: Angela Hillsman
+        period: F.  2015
+        topic: "Princeton Door-To-Door Mapping"
+      - name: J. Evans
+        period: Spr.  2015
+        topic: "Combinatorial Approach to Evaluating Streaming Alg. Performance"
+      - name: James Evans
+        period: F.  2014
+        topic: "codePost"
 
 selected_publications:
   name: "J. Lumbroso"
@@ -292,37 +388,37 @@ all_publications:
     #   prefix: S
     #   file: posters.bib
 
-coursework:
-  - semester: S2017
-    name: Statistical Machine Learning (10-702, Au)
-    instructor: L. Wasserman
-  - semester: S2017
-    name: Deep Reinforcement Learning (10-703, Au)
-    instructor: R. Salakhutdinov and A. Fragkiadaki
-  - semester: F2016
-    name: Intermediate Statistics (10-705, Au)
-    instructor: L. Wasserman
-  - semester: F2016
-    name: Topics in Deep Learning (10-807)
-    instructor: R. Salakhutdinov
-  - semester: F2015
-    name: Convex Optimization (10-725)
-    instructor: R. J. Tibshirani
-  - semester: F2015
-    name: Algorithms in the Real World (15-853)
-    instructor: G. Blelloch and A. Gupta
-  - semester: S2015
-    name: Semantics of Programming Languages (15-812)
-    instructor: A. Platzer
-  - semester: S2015
-    name: Optimizing Compilers for Modern Architecture (15-745)
-    instructor: T. Mowry
-  - semester: F2014
-    name: Advanced Operating and Distributed Systems (15-712)
-    instructor: D. Andersen
-  - semester: F2014
-    name: Mobile and Pervasive Computing (15-812)
-    instructor: M. Satyanarayanan and D. Siewiorek
+# coursework:
+#   - semester: S2017
+#     name: Statistical Machine Learning (10-702, Au)
+#     instructor: L. Wasserman
+#   - semester: S2017
+#     name: Deep Reinforcement Learning (10-703, Au)
+#     instructor: R. Salakhutdinov and A. Fragkiadaki
+#   - semester: F2016
+#     name: Intermediate Statistics (10-705, Au)
+#     instructor: L. Wasserman
+#   - semester: F2016
+#     name: Topics in Deep Learning (10-807)
+#     instructor: R. Salakhutdinov
+#   - semester: F2015
+#     name: Convex Optimization (10-725)
+#     instructor: R. J. Tibshirani
+#   - semester: F2015
+#     name: Algorithms in the Real World (15-853)
+#     instructor: G. Blelloch and A. Gupta
+#   - semester: S2015
+#     name: Semantics of Programming Languages (15-812)
+#     instructor: A. Platzer
+#   - semester: S2015
+#     name: Optimizing Compilers for Modern Architecture (15-745)
+#     instructor: T. Mowry
+#   - semester: F2014
+#     name: Advanced Operating and Distributed Systems (15-712)
+#     instructor: D. Andersen
+#   - semester: F2014
+#     name: Mobile and Pervasive Computing (15-812)
+#     instructor: M. Satyanarayanan and D. Siewiorek
 
 skills:
   - title: Languages
@@ -404,25 +500,6 @@ honors:
   #- title: Head Junior Marshall, Northside High School, 2010
   #- title: 3rd Place District Foreign Extemporaneous Speaker,
   #         VHSL Forensics, 2009
-# projects:
-#   website:
-#     name: Personal Blog and Website
-#     url: http://bamos.github.io
-#     details:
-#       - Hosted on GitHub Pages. Uses {\bf Markdown} for posts and {\bf Jekyll}
-#           for static HTML generation.
-#       - '{\bf 42 posts} across the following tags,
-#         listed by highest frequency.'
-#       - Python, Bash, Linux, LaTeX, Fortran, Android, Scala, News,
-#         JavaScript, Zsh, C++, OpenMP, Lua, Make, Mathematica, mpv
-#   github:
-#     name: GitHub Portfolio
-#     url: http://github.com/bamos
-#     details:
-#       - Hosts code samples, original source code, and patches for
-#         open source projects.
-#       - 25 original repositories, 5 forked repositories.
-
 # activities:
 #   - Honors Residential College, Virginia Tech, 2013 -- 2014
 #   - Hokies Pep Band, Virginia Tech, 2012 -- 2013

@@ -5,7 +5,7 @@
     ~< for item in items >~
       %\item << item.title >>, << item.place >>\hfill << item.dates >>
       \item << item.name >>, \href{https://scholar.google.com/citations?user=<< item.url >>}{<< item.url >>}
-        \iftrue
+        \iffalse
         \begin{itemize}
           ~< for detail in item.details ->~
             \item <<detail>>

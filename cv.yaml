@@ -172,6 +172,11 @@ industry:
     location: Rocquencourt, France
     title: Research Intern
     dates: Feb. 2009--Oct. 2009
+    area: Analysis of Probabilistic Algorithms
+  - place: Centre Nat. d'Enseign. {\'a} Distance (CNED)
+    location: Paris, France
+    title: Online Instructor
+    dates: Sep. 2007--Feb. 2008
     area: Programming Language Design
   - place: MLstate
     location: Paris, France
@@ -312,6 +317,11 @@ projects:
     details:
       - Website to generate flash cards of ugrads or COS people to learn their names
       - Leveraged this tool to learn my students' names and improve interactions
+  - name: PersonalityDB
+    url: https://ptdb.tigeruhr.io/
+    details:
+      - Website to collect and integrate the data from a personality questionnaire
+      - Will allow for research projects, such as improving partner matching
   # - name: Personal Blog and Website
   #   url: http://bamos.github.io
   #   details:

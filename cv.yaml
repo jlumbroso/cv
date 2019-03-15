@@ -4,12 +4,12 @@ name:
 phone: ~(609)~258-5379
 email: lumbroso@cs.princeton.edu
 pdf: /data/cv.pdf
-src: https://github.com/bamos/cv
+src: https://github.com/jlumbroso/cv
 url: "www.cs.princeton.edu/~lumbroso"
 social:
   github: jlumbroso
   #twitter:
-  #linkedin: bdamos
+  #linkedin:
   google_scholar: WeHh1d0AAAAJ
 # Erdős number is at most 3.
 # ([Jérémie Lumbroso -> Philippe Flajolet -> Andrew Odlyzko -> Paul Erdős )
@@ -326,11 +326,11 @@ teaching:
     position: TA
 
 selected_publications:
-  name: "B. Amos"
+  name: "J. Lumbroso"
   file: selected.bib
 
 all_publications:
-  name: "B. Amos"
+  name: "J. Lumbroso"
   categories:
     - heading: Preprints and Tech Reports
       prefix: P
@@ -344,12 +344,12 @@ all_publications:
     - heading: Workshop, Symposium, and Short Papers
       prefix: W
       file: short.bib
-    - heading: Magazine Articles
-      prefix: M
-      file: magazine.bib
-    - heading: Posters
-      prefix: S
-      file: posters.bib
+    # - heading: Magazine Articles
+    #   prefix: M
+    #   file: magazine.bib
+    # - heading: Posters
+    #   prefix: S
+    #   file: posters.bib
 
 coursework:
   - semester: S2017

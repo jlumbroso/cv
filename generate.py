@@ -244,14 +244,16 @@ class RenderContext(object):
             elif section_tag == 'news':
                 if self._file_ending == '.tex':
                     continue
-                section_template_name = os.path.join(self.SECTIONS_DIR, 'news.md')
+                section_template_name = os.path.join(
+                    self.SECTIONS_DIR, 'news.md')
                 section_data['items'] = section_content
             elif section_tag == 'service':
                 section_data['items'] = section_content
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, 'skills' + self._file_ending)
             elif section_tag in ['coursework', 'education', 'honors',
-                                 'industry', 'research', 'skills', 'teaching']:
+                                 'industry', 'research', 'skills', 'teaching',
+                                 'projects']:
                 section_data['items'] = section_content
                 section_template_name = os.path.join(
                     self.SECTIONS_DIR, section_tag + self._file_ending)
@@ -346,7 +348,8 @@ def process_resume(context, yaml_data, preview):
 
 def main():
     # Parse the command line arguments
-    parser = argparse.ArgumentParser(description='Generates HTML, LaTeX, and Markdown resumes from data in YAML files.')
+    parser = argparse.ArgumentParser(
+        description='Generates HTML, LaTeX, and Markdown resumes from data in YAML files.')
     parser.add_argument('yamls', metavar='YAML_FILE', nargs='+',
                         help='The YAML files that contain the resume/cv'
                         'details, in order of increasing precedence')

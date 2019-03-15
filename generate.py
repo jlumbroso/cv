@@ -227,6 +227,11 @@ class RenderContext(object):
         return groups
 
     def render_resume(self, yaml_data):
+        # NOTE: Hack to support tilde in URLs
+        if 'url' in yaml_data:
+            yaml_data['url'] = yaml_data['url'] .replace(
+                "~", "\\textasciitilde ")
+
         # Make the replacements first on the yaml_data
         yaml_data = self.make_replacements(yaml_data)
 

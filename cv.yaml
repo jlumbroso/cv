@@ -4,8 +4,8 @@ name:
 phone: ~(609)~258-5379
 email: lumbroso@cs.princeton.edu
 pdf: /data/cv.pdf
-src: https://github.com/jlumbroso/cv
-url: "www.cs.princeton.edu/~lumbroso"
+src: "https://github.com/jlumbroso/cv"
+url: "www.cs.princeton.edu/~lumbroso/"
 social:
   github: jlumbroso
   #twitter:

@@ -17,6 +17,8 @@ venv
 
 # Temporary LaTeX files
 *.aux
+*.bbl
+*.blg
 *.log
 *.out
 auto

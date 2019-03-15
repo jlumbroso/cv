@@ -5,13 +5,15 @@
     ~< for item in items >~
       %\item << item.title >>, << item.place >>\hfill << item.dates >>
       \item << item.name >>, \href{https://scholar.google.com/citations?user=<< item.url >>}{<< item.url >>}
-        \iffalse
+        ~< if item.details >~
+        \iftrue
         \begin{itemize}
           ~< for detail in item.details ->~
             \item <<detail>>
           ~<- endfor ->~
         \end{itemize}
         \fi
+        ~< endif >~
     ~< endfor >~
   \end{itemize}
 ~< endblock body >~

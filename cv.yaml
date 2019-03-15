@@ -1,23 +1,23 @@
 name:
-  first: Brandon
-  last: Amos
-phone: ~(540)~947~1238
-email: bamos@cs.cmu.edu
+  first: Jérémie
+  last: Lumbroso
+phone: ~(609)~258-5379
+email: lumbroso@cs.princeton.edu
 pdf: /data/cv.pdf
 src: https://github.com/bamos/cv
-url: "bamos.github.io"
+url: "www.cs.princeton.edu/~lumbroso"
 social:
-  github: bamos
-  twitter: brandondamos
-  linkedin: bdamos
-  google_scholar: d8gdZR4AAAAJ
-# Erdős  number is at most 4.
-# (Brandon Amos -> Layne Watson -> Leroy Kelly -> Zoltán Füredi -> Paul Erdős )
+  github: jlumbroso
+  #twitter:
+  #linkedin: bdamos
+  google_scholar: WeHh1d0AAAAJ
+# Erdős number is at most 3.
+# ([Jérémie Lumbroso -> Philippe Flajolet -> Andrew Odlyzko -> Paul Erdős )
 
 # LaTeX formatting.
 style: banking # casual, classic, oldstyle, or banking
-color: blue # blue, orange, green, red, purple, grey and black
-color2: '0.25,0.25,0.25' # Make the font under the name a darker grey.
+color: green # blue, orange, green, red, purple, grey and black
+color2: "0.25,0.25,0.25" # Make the font under the name a darker grey.
 
 # (tag, section type, title)
 order:
@@ -30,9 +30,9 @@ order:
   - [teaching, Teaching Experience]
   - [industry, Industry Experience]
   # - [projects, Projects]
-  - [coursework, CMU Graduate Coursework]
-  - [honors, Honors \& Awards]
-  - [skills, Skills]
+  #- [coursework, CMU Graduate Coursework]
+  #- [honors, Honors \& Awards]
+  #- [skills, Skills]
   - [service, Service]
   # - [NEWPAGE, NEWPAGE]
   - [all_publications, All Publications]
@@ -98,34 +98,33 @@ about: '
   <br><br>'
 
 # news:
-  # - date: Sept 2018
-  #   info: "I will be attending NIPS 2018 this year. Come see our work on
-  #     1) differentiable model predictive control and
-  #     2) depth-limited solving for imperfect-information games."
-  # - date: Mar 2018
-  #   info: "I will be at ICLR this year presenting
-  #   my DeepMind internship paper
-  #   <a href='https://openreview.net/forum?id=r1HhRfWRZ'>
-  #     Learning Awareness Models</a>."
-  # - date: Feb 2018
-  #   info: "I am interning at Intel Labs in Santa Clara this summer
-  #   with <a href='http://vladlen.info/'>Vladlen Koltun</a>."
-  # - date: Nov 2017
-  #   info: "I will be at NIPS 2017 this year.
-  #   Come see our
-  #   <a href='https://papers.nips.cc/paper/7132-task-based-end-to-end-model-learning-in-stochastic-optimization'>Task-based End-to-end Model Learning in Stochastic Optimization</a>
-  #   work at the main conference and our (unpublished)
-  #   End-to-end Model Predictive Control work at the
-  #   deep reinforcement learning symposium.
-  #   "
-  # - date: June 2017
-  #   info: "Our ICNN and OptNet papers have been accepted to ICML and
-  #   the camera-ready versions are available on arXiv."
-  # - date: May 2017
-  #   info: "I am interning at <a href='https://deepmind.com/'>Google DeepMind</a>
-  #   in London this summer with
-  #   <a href='http://www.cs.ox.ac.uk/people/nando.defreitas/'>Nando de Freitas</a>."
-
+# - date: Sept 2018
+#   info: "I will be attending NIPS 2018 this year. Come see our work on
+#     1) differentiable model predictive control and
+#     2) depth-limited solving for imperfect-information games."
+# - date: Mar 2018
+#   info: "I will be at ICLR this year presenting
+#   my DeepMind internship paper
+#   <a href='https://openreview.net/forum?id=r1HhRfWRZ'>
+#     Learning Awareness Models</a>."
+# - date: Feb 2018
+#   info: "I am interning at Intel Labs in Santa Clara this summer
+#   with <a href='http://vladlen.info/'>Vladlen Koltun</a>."
+# - date: Nov 2017
+#   info: "I will be at NIPS 2017 this year.
+#   Come see our
+#   <a href='https://papers.nips.cc/paper/7132-task-based-end-to-end-model-learning-in-stochastic-optimization'>Task-based End-to-end Model Learning in Stochastic Optimization</a>
+#   work at the main conference and our (unpublished)
+#   End-to-end Model Predictive Control work at the
+#   deep reinforcement learning symposium.
+#   "
+# - date: June 2017
+#   info: "Our ICNN and OptNet papers have been accepted to ICML and
+#   the camera-ready versions are available on arXiv."
+# - date: May 2017
+#   info: "I am interning at <a href='https://deepmind.com/'>Google DeepMind</a>
+#   in London this summer with
+#   <a href='http://www.cs.ox.ac.uk/people/nando.defreitas/'>Nando de Freitas</a>."
 
 service:
   - title: Reviewer
@@ -133,8 +132,7 @@ service:
   - title: Admissions
     details: CMU CSD MS 2014-2015
 
-selected_repos:
-  https://github.com/locuslab/icnn
+selected_repos: https://github.com/locuslab/icnn
   https://locuslab.github.io/qpth/
   https://github.com/locuslab/qpth
   https://github.com/locuslab/mpc.pytorch
@@ -194,8 +192,8 @@ research:
     area: Applied machine learning and mobile systems
     details:
       - |
-          Face recognition with deep neural networks:
-          \url{http://github.com/cmusatyalab/openface}
+        Face recognition with deep neural networks:
+        \url{http://github.com/cmusatyalab/openface}
   - place: Virginia Tech
     location: Blacksburg, Virginia
     title: Undergraduate Research Assistant
@@ -266,20 +264,20 @@ industry:
     title: Software Engineer Intern
     dates: Dec 2013 -- Jan 2014
     details:
-    - Open-source {\bf Scala} development with a startup on the
-      Snowplow analytics platform.
-      My commits are online at
-      \url{https://github.com/snowplow/snowplow/commits?author=bamos}.
-    - Developed a new server using {\bf Spray} and {\bf Actors} to store
-      {\bf Thrift} events on {\bf Amazon Kinesis}.
+      - Open-source {\bf Scala} development with a startup on the
+        Snowplow analytics platform.
+        My commits are online at
+        \url{https://github.com/snowplow/snowplow/commits?author=bamos}.
+      - Developed a new server using {\bf Spray} and {\bf Actors} to store
+        {\bf Thrift} events on {\bf Amazon Kinesis}.
     # - "Helped port Snowplow's Scala enrichment process to Kinesis."
   - place: Qualcomm
     location: San Diego, California
     title: Software Engineer Intern
     dates: May 2013 -- Aug 2013
     details:
-    - "I created a specification format language translator for fuzz
-      testing with Python."
+      - "I created a specification format language translator for fuzz
+        testing with Python."
     # - Developed an XML modification {\bf web application} for
     #   fuzz vector generation.
     #   Implemented with client-side {\bf HTML} and {\bf js},
@@ -353,7 +351,6 @@ all_publications:
       prefix: S
       file: posters.bib
 
-
 coursework:
   - semester: S2017
     name: Statistical Machine Learning (10-702, Au)
@@ -401,61 +398,61 @@ honors:
   - title: "Eight undergraduate scholarships"
     year: 2011 -- 2014
   # - title: Phi Beta Kappa Honor Society
-    # year: Inducted May 2014
+  # year: Inducted May 2014
   # - title: 1st Place Undergraduate Senior Capstone Award, Virginia Tech Computer Science
   #   year: 2014
   # - title: David Heilman Research Award, Virginia Tech Computer Science
   #   year: 2014
-    # descr: Awarded to the Computer Science student with the most
-    #   outstanding research experience.
+  # descr: Awarded to the Computer Science student with the most
+  #   outstanding research experience.
   # - title: Senior Scholar Award, Virginia Tech Computer Science
   #   year: 2014
-    # descr: Awarded to the senior in Computer Science with the most
-    #        outstanding academic record.
+  # descr: Awarded to the senior in Computer Science with the most
+  #        outstanding academic record.
   # - title: ACC Meeting of the Minds Undergraduate Research Conference, 2014
-   # url: http://www.vtnews.vt.edu/articles/2014/03/030514-uged-accmom.html
+  # url: http://www.vtnews.vt.edu/articles/2014/03/030514-uged-accmom.html
   # - title: Honorable Mention, CRA Outstanding Undergraduate Researcher Award
   #   year: 2014
-    # descr: 1 of 15 North American males awarded honorable mention for
-    #        exemplary computer science research.
-    # url: http://cra.org/awards/undergrad-view/2014_outstanding_undergraduate_award_recipients/
+  # descr: 1 of 15 North American males awarded honorable mention for
+  #        exemplary computer science research.
+  # url: http://cra.org/awards/undergrad-view/2014_outstanding_undergraduate_award_recipients/
   #- title: Qualstar Award, Qualcomm, 2013
   #- title: Pi Mu Epsilon Honor Society, Inducted 2013
   # - title: Awarded eight undergraduate merit scholarships
   #   year: 2011 -- 2014
   # - title: Benjamin F. Bock Merit Scholarship, Virginia Tech Engineering
-    # year: 2013 -- 2014
+  # year: 2013 -- 2014
   # - title: Sophomore Scholar Award, Virginia Tech Computer Science, 2013
   #descr: Awarded to the sophomore in Computer Science with the most
   #         outstanding academic record.
   #- title: University Honors, Virginia Tech, 2012 -- 2014
   # - title: Intelligence Community Center of Academic Excellence Scholarship,
-      # Virginia Tech
-    # year: 2012 -- 2014
-    # descr: Merit-based scholarship providing a cyber-security
-    #        research fellowship.
+  # Virginia Tech
+  # year: 2012 -- 2014
+  # descr: Merit-based scholarship providing a cyber-security
+  #        research fellowship.
   #- title: Dean's List with Distinction, Virginia Tech, 2011 -- 2014
   # - title: Engineering Merit Scholarship,
-           # Roanoke County Public Schools Education Foundation
-    # year: 2011
-    # descr: Merit-based scholarship presented annually to one student
-    #        in the graduating Engineering class.
+  # Roanoke County Public Schools Education Foundation
+  # year: 2011
+  # descr: Merit-based scholarship presented annually to one student
+  #        in the graduating Engineering class.
   # - title: "Papa John's Merit Scholarship"
-    # year: 2011
+  # year: 2011
   # - title: Gay B. Shober Memorial Merit Scholarship,
-        # Roanoke County Federal Credit Union
-    # year: 2011
+  # Roanoke County Federal Credit Union
+  # year: 2011
   # - title: Pamplin Leader Merit Scholarship, Virginia Tech
-    # year: 2011
-    # descr: Merit-based scholarship presented to one student from
-    #        each public high school in Virginia.
-    # url: http://ww2.roanoke.com/community/virginia/education/wb/292050
+  # year: 2011
+  # descr: Merit-based scholarship presented to one student from
+  #        each public high school in Virginia.
+  # url: http://ww2.roanoke.com/community/virginia/education/wb/292050
   # - title: I. Luck Gravett Memorial Merit Scholarship,
-        # Scottish Rite of Freemasonry
-    # year: 2011
+  # Scottish Rite of Freemasonry
+  # year: 2011
   # - title: Salem -- Roanoke County Chamber of Commerce Merit Scholarship
-    # year: 2011
-    # url: http://s-rcchamber.org/wp-content/uploads/2011/03/August-2011-NL.pdf
+  # year: 2011
+  # url: http://s-rcchamber.org/wp-content/uploads/2011/03/August-2011-NL.pdf
   #- title: 1st Place Regional CAD/Engineering Drawing,
   #         Virginia TSA, Blue Ridge Region, 2011
   #- title: District Band Trumpeter, VBODA District VI, 2009 -- 2011
@@ -466,7 +463,6 @@ honors:
   #- title: Head Junior Marshall, Northside High School, 2010
   #- title: 3rd Place District Foreign Extemporaneous Speaker,
   #         VHSL Forensics, 2009
-
 # projects:
 #   website:
 #     name: Personal Blog and Website

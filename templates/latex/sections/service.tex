@@ -1,0 +1,9 @@
+~< extends "section.tex" >~
+
+~< block body >~
+\begin{tabular}{p{1.5in}p{4.5in}}
+  ~< for item in items >~
+    << item.title >> & {\footnotesize{<< item.details >>}} \\
+  ~< endfor >~
+\end{tabular}
+~< endblock body >~

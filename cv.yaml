@@ -26,15 +26,15 @@ order:
   - [education, Education]
   - [teaching, Teaching Experience]
   #- [research, Research Experience]
+  - [service, Service]
   - [projects, Selected Projects]
   - [advised_students, Selected Advised Students]
   - [selected_publications, Selected Publications]
   # - [NEWPAGE, NEWPAGE]
-  #- [industry, Industry Experience]
+  - [industry, Industry Experience]
   #- [coursework, CMU Graduate Coursework]
   #- [honors, Honors \& Awards]
-  #- [skills, Skills]
-  #- [service, Service]
+  - [skills, Skills]
   # - [NEWPAGE, NEWPAGE]
   - [all_publications, All Publications]
 #  - [activities, Activities]
@@ -44,6 +44,20 @@ about: ""
 # news:
 # - date: Sept 2018
 #   info: ""
+
+service:
+  - title: Int. Committees
+    details: Lecturer Hiring (since 2016), Infrastructure Advisory (since 2015), Ed. Software (since 2017), Industry Affiliates (since 2018)
+  - title: University-level
+    details: Faculty adviser for USG Labs and TigerApps (since 2015), faculty oversight of student software such as Recal, Tigerbook, TigerPath (since 2015)
+  - title: BSE Fresh. Adv.
+    details: 42 students in 2015-2019
+  - title: COS BSE Adv.
+    details: 45 students from the BSE COS 2019 class of majors
+  - title: Conference Organizer
+    details: Young Al{\'e}a Workshop (Oxford 2013, Paris 2014), AofA (Princeton 2017).
+  - title: Reviewer
+    details: ANALCO (2014-2019), SODA (2013-2014), LATIN (2014), AofA (2014), CPC (2013).
 
 # service:
 #   - title: Reviewer
@@ -154,77 +168,88 @@ research:
       #- '{\bf Scala} and {\bf Bash} development in {\bf Linux}.'
 
 industry:
-  - place: Intel Labs
-    location: Santa Clara, California
+  - place: Inst. Nat. de Recherche en Info. et en Autom. (INRIA)
+    location: Rocquencourt, France
     title: Research Intern
-    dates: June 2018 -- Sept 2018
-    advisor: Vladlen Koltun
-    area: Machine learning
-  - place: Google DeepMind
-    location: London, UK
-    title: Research Intern
-    dates: May 2017 -- Oct 2017
-    advisor: Nando de Freitas
-    area: Machine and reinforcement learning
-  - place: Adobe Research
-    location: San Jose, California
-    title: Data Scientist Intern
-    dates: May 2014 -- Aug 2014
-    area: Distributed Systems
-    details:
-      - I built a web analytics processing engine using {\bf Scala},
-        {\bf Spark}, {\bf Spray}, {\bf Parquet}, and {\bf HDFS}.
-  - place: Snowplow Analytics
-    location: London, United Kingdom (Remote)
-    title: Software Engineer Intern
-    dates: Dec 2013 -- Jan 2014
-    details:
-      - Open-source {\bf Scala} development with a startup on the
-        Snowplow analytics platform.
-        My commits are online at
-        \url{https://github.com/snowplow/snowplow/commits?author=bamos}.
-      - Developed a new server using {\bf Spray} and {\bf Actors} to store
-        {\bf Thrift} events on {\bf Amazon Kinesis}.
-    # - "Helped port Snowplow's Scala enrichment process to Kinesis."
-  - place: Qualcomm
-    location: San Diego, California
-    title: Software Engineer Intern
-    dates: May 2013 -- Aug 2013
-    details:
-      - "I created a specification format language translator for fuzz
-        testing with Python."
-    # - Developed an XML modification {\bf web application} for
-    #   fuzz vector generation.
-    #   Implemented with client-side {\bf HTML} and {\bf js},
-    #   using {\bf D3} for graphics and {\bf Handlebars} for templating.
-    # - Developed an XML-based grammar translator in {\bf C++} with
-    #   the {\bf Xerces} XML parser in {\bf Linux}.
-    #   Reimplemented in {\bf Python} using the {\bf ElementTree} XML API for
-    #   sophisticated analysis and tree transformations.
-  - place: Phoenix Integration
-    location: Blacksburg, Virginia
-    title: Software Engineer Intern
-    dates: May 2012 -- Aug 2012
-    details:
-      - I developed industry software for software integration and
-        design process optimization in {\bf VC++}, {\bf VC\#}, and {\bf Java}.
-      # - Developed industry software in
-      #   {\bf VC++}, {\bf VC\#}, {\bf Java}, and {\bf Tomcat}.
-      # - Improved the testing ({\bf JUnit} and {\bf NUnit}) and installation
-      #   ({\bf Ant}, {\bf InstallShield}, and {\bf Make}) frameworks.
-      # - Integrated a new licensing mode into CenterLink, a grid computing
-      #   application, using {\bf FLEXlm} and {\bf Java}.
-  - place: Sunapsys
-    location: Vinton, Virginia
-    title: Network Administrator Intern
-    dates: Jan 2011 -- Aug 2011
-    details:
-      - Internship in high school to replace Windows domain, mail,
-        DHCP, and DNS servers with virtual {\bf Linux} servers
-        using {\bf KVM} and {\bf virsh}.
-      # - Migrated the office's computers to the Linux servers.
-      # - Created {\bf Bash} scripts for incremental backups with rsync
-      #   and hard links.
+    dates: Feb. 2009--Oct. 2009
+    area: Programming Language Design
+  - place: MLstate
+    location: Paris, France
+    title: Software Engineer
+    dates: Jul. 2007--Oct. 2009
+    area: Programming Language Design
+
+  # - place: Intel Labs
+  #   location: Santa Clara, California
+  #   title: Research Intern
+  #   dates: June 2018 -- Sept 2018
+  #   advisor: Vladlen Koltun
+  #   area: Machine learning
+  # - place: Google DeepMind
+  #   location: London, UK
+  #   title: Research Intern
+  #   dates: May 2017 -- Oct 2017
+  #   advisor: Nando de Freitas
+  #   area: Machine and reinforcement learning
+  # - place: Adobe Research
+  #   location: San Jose, California
+  #   title: Data Scientist Intern
+  #   dates: May 2014 -- Aug 2014
+  #   area: Distributed Systems
+  #   details:
+  #     - I built a web analytics processing engine using {\bf Scala},
+  #       {\bf Spark}, {\bf Spray}, {\bf Parquet}, and {\bf HDFS}.
+  # - place: Snowplow Analytics
+  #   location: London, United Kingdom (Remote)
+  #   title: Software Engineer Intern
+  #   dates: Dec 2013 -- Jan 2014
+  #   details:
+  #     - Open-source {\bf Scala} development with a startup on the
+  #       Snowplow analytics platform.
+  #       My commits are online at
+  #       \url{https://github.com/snowplow/snowplow/commits?author=bamos}.
+  #     - Developed a new server using {\bf Spray} and {\bf Actors} to store
+  #       {\bf Thrift} events on {\bf Amazon Kinesis}.
+  #   # - "Helped port Snowplow's Scala enrichment process to Kinesis."
+  # - place: Qualcomm
+  #   location: San Diego, California
+  #   title: Software Engineer Intern
+  #   dates: May 2013 -- Aug 2013
+  #   details:
+  #     - "I created a specification format language translator for fuzz
+  #       testing with Python."
+  #   # - Developed an XML modification {\bf web application} for
+  #   #   fuzz vector generation.
+  #   #   Implemented with client-side {\bf HTML} and {\bf js},
+  #   #   using {\bf D3} for graphics and {\bf Handlebars} for templating.
+  #   # - Developed an XML-based grammar translator in {\bf C++} with
+  #   #   the {\bf Xerces} XML parser in {\bf Linux}.
+  #   #   Reimplemented in {\bf Python} using the {\bf ElementTree} XML API for
+  #   #   sophisticated analysis and tree transformations.
+  # - place: Phoenix Integration
+  #   location: Blacksburg, Virginia
+  #   title: Software Engineer Intern
+  #   dates: May 2012 -- Aug 2012
+  #   details:
+  #     - I developed industry software for software integration and
+  #       design process optimization in {\bf VC++}, {\bf VC\#}, and {\bf Java}.
+  #     # - Developed industry software in
+  #     #   {\bf VC++}, {\bf VC\#}, {\bf Java}, and {\bf Tomcat}.
+  #     # - Improved the testing ({\bf JUnit} and {\bf NUnit}) and installation
+  #     #   ({\bf Ant}, {\bf InstallShield}, and {\bf Make}) frameworks.
+  #     # - Integrated a new licensing mode into CenterLink, a grid computing
+  #     #   application, using {\bf FLEXlm} and {\bf Java}.
+  # - place: Sunapsys
+  #   location: Vinton, Virginia
+  #   title: Network Administrator Intern
+  #   dates: Jan 2011 -- Aug 2011
+  #   details:
+  #     - Internship in high school to replace Windows domain, mail,
+  #       DHCP, and DNS servers with virtual {\bf Linux} servers
+  #       using {\bf KVM} and {\bf virsh}.
+  #     # - Migrated the office's computers to the Linux servers.
+  #     # - Created {\bf Bash} scripts for incremental backups with rsync
+  #     #   and hard links.
 
 teaching:
   - semester: W2013
@@ -267,14 +292,26 @@ projects:
     url: https://tigeruhr.io
     details:
       - Tool designed to streamline the application, hiring, management of ugrad. workers
-      - Introduced in Fall 2016, has allowed us to transition from hiring ~20 ugrads. across 5 positions, to as of 2019 hiring ~350 across 14 positions
+      - Introduced in Fall 2016, has allowed us to transition from hiring \textasciitilde{}20
+        ugrads. across 5 positions, to as of 2019 hiring \textasciitilde{}350 across 14 positions
       - Aggregate data allows to better match students to jobs; and maintain satisfaction
   - name: Quizzera
     url: https://quizzera.io
+    details:
+      - Automated quizzing platform used in CS2 course with \textasciitilde 70 questions types
+      - Allows students to take infinite random variations of questions with no staff involvement past initial term setup
+      - Essential part of flipped CS2, it discourages procrastination (\textasciitilde{}600 students/term)
   - name: LabQueue
     url: https://labqueue.io
+    details:
+      - Automated ticketing system designed to manage our labs
+      - Serviced \textasciitilde{}1200 students in 2018; manages a staff of \textasciitilde{}50 TAs/term.
+      - Analytics produced allowed us to efficiently staff, and petition for ressources
   - name: Anki Facecards
-    url: https://labqueue.io
+    url: https://edutools.cs.princeton.edu/facecards/
+    details:
+      - Website to generate flash cards of ugrads or COS people to learn their names
+      - Leveraged this tool to learn my students' names and improve interactions
   # - name: Personal Blog and Website
   #   url: http://bamos.github.io
   #   details:
@@ -422,12 +459,12 @@ all_publications:
 
 skills:
   - title: Languages
-    details: C, C++, Fortran, Haskell, Java,
-      Lua, Make, {\it Mathematica}, Python, R, Scala
+    details: Python, JavaScript, C, C\#, Java, OCaml,
+      PHP, Make, Maple, Shell, ...
   - title: Frameworks
-    details: NumPy, Pandas, PyTorch, SciPy, TensorFlow, Torch7
+    details: Django, Node.js, NumPy, Pandas, SciPy
   - title: Systems
-    details: Linux, OSX
+    details: Linux, OSX, Windows
 
 honors:
   - title: NSF Graduate Research Fellowship

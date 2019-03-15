@@ -1,7 +1,25 @@
+
+# VSCode metadata
+.vscode
+
+# macOS metadata
+.DS_Store
+
+# Compiled Python
 __pycache__
+*.pyc
+
+# Miscellaneous Python files
+venv
+
+# Document output
+*.pdf
+
+# Temporary LaTeX files
 *.aux
 *.log
 *.out
-*.pdf
-venv
 auto
+*.fls
+*.fdb_latexmk
+*.synctex

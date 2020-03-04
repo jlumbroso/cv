@@ -46,18 +46,20 @@ about: ""
 #   info: ""
 
 service:
+  - title: Teaching Awards
+    details: SEAS Excellence in Teaching Award (Fall 2019)
   - title: Int. Committees
-    details: Lecturer Hiring (since 2016), Infrastructure Advisory (since 2015), Ed. Software (since 2017), Industry Affiliates (since 2018)
+    details: Lecturer Hiring (since 2016), Infrastructure Advisory (since 2015), Educational Software (since 2017), Industry Affiliates (since 2018)
   - title: University-level
-    details: Faculty adviser for USG Labs and TigerApps (since 2015), faculty oversight of student software such as Recal, Tigerbook, TigerPath (since 2015)
+    details: Canvas Faculty Advisory Group (since 2019), Faculty adviser for USG Labs and TigerApps (since 2015), faculty oversight of student software such as Recal, Tigerbook, TigerPath (since 2015)
   - title: BSE Fresh. Adv.
-    details: 42 students in 2015-2019
+    details: 56 students in 2015-2020
   - title: COS BSE Adv.
     details: 45 students from the BSE COS 2019 class of majors
   - title: Conference Organizer
     details: Young Al{\'e}a Workshop (Oxford 2013, Paris 2014), AofA (Princeton 2017).
-  - title: Reviewer
-    details: ANALCO (2014-2019), SODA (2013-2014), LATIN (2014), AofA (2014), CPC (2013).
+  - title: P.C./Reviewer
+    details: ANALCO (2014-2019), SODA (2013-2014), LATIN (2014), AofA (2014, 2018, 2020), CPC (2013), SIGCSE (2016-2020), ITiCSE (2016, 2020).
 
 # service:
 #   - title: Reviewer
@@ -168,6 +170,14 @@ research:
       #- '{\bf Scala} and {\bf Bash} development in {\bf Linux}.'
 
 industry:
+  - place: codePost
+    location: New-York, NY, USA
+    title: Head of Research
+    dates: March 2019--present
+  - place: CUvids
+    location: Princeton, NJ, USA
+    title: UI/UX and Software Engineering Consultant
+    dates: August 2019--present
   - place: Inst. Nat. de Recherche en Info. et en Autom. (INRIA)
     location: Rocquencourt, France
     title: Research Intern
@@ -259,20 +269,28 @@ industry:
 teaching:
   - semester: W2013
     name: Intro CS1
-    short: CMPT 120
+    short: CMPT 120 @ SFU
     position: Lead Instructor
   - semester: S2014
-    name: Intro CS1
+    name: Intro CS2 @ SFU
     short: CMPT 225
     position: Lead Instructor
-  - semester: F2015, S2016, F2017
-    name: Intro CS1
-    short: COS 126
-    position: Co-Lead Preceptor
   - semester: F2014, S2015, F2016, S2017
-    name: Intro CS2
+    name: Intro CS2 @ Princeton
     short: COS 226
     position: Co-Lead Preceptor, Instructor
+  - semester: F2015, S2016, F2017, F2019
+    name: Intro CS1 @ Princeton
+    short: COS 126
+    position: Co-Lead Preceptor
+  - semester: S2020
+    name: Intro CS1 @ Princeton
+    short: COS 126
+    position: Code Grading Coordinator
+  - semester: S2015, S2017, S2020
+    name: Analytic Combinatorics
+    short: COS 488 
+    position: Co-Instructor
   - semester: F2017
     name: Intro to Cybersecurity
     short: COS 462
@@ -292,8 +310,8 @@ projects:
     details:
       - Tool designed to streamline grading code assignments, and managing 100s+ ugrad. graders
       - Introduced in Fall 2015, has graded 30k+ submissions, for 3k+ students and 20+ courses
-      - Initially advised collaborator James Evans as ugrad. (2014-2016); now expanding in 2019
-  - name: TigerUHR
+      - Initially advised collaborator James Evans as ugrad. (2014-2016); now a company in 2019
+  - name: TigerUHR (to become HireED)
     url: https://tigeruhr.io
     details:
       - Tool designed to streamline the application, hiring, management of ugrad. workers

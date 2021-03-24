@@ -20,11 +20,11 @@ jobs:
       
       - name: Update APT + install TeXLive
         run: |
-          sudo apt update
-          sudo apt install texlive-base texlive-binaries texlive-bibtex-extra texlive-font-utils texlive-fonts-extra texlive-fonts-recommended texlive-lang-english texlive-lang-european texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-plain-generic texlive-pstricks texlive-xetex
-          sudo apt install make latexmk
-          sudo apt install biber
-          sudo apt update 
+          sudo apt-get -y update
+          sudo apt-get -y install texlive-base texlive-binaries texlive-bibtex-extra texlive-font-utils texlive-fonts-extra texlive-fonts-recommended texlive-lang-english texlive-lang-european texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-plain-generic texlive-pstricks texlive-xetex
+          sudo apt-get -y install make latexmk
+          sudo apt-get -y install biber
+          sudo apt-get -y update 
       
       - name: Build CV
         run: |

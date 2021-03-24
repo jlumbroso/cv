@@ -8,12 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Update APT + install TeXLive
-        run: |
-          sudo apt update
-          sudo apt install texlive-base texlive-binaries texlive-bibtex-extra texlive-font-utils texlive-fonts-extra texlive-fonts-recommended texlive-lang-english texlive-lang-european texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-plain-generic texlive-pstricks texlive-xetex
-          sudo apt update
-
       - name: Setup Python
         uses: actions/setup-python@v1
         with:
@@ -22,7 +16,13 @@ jobs:
       - name: Install dependencies with pip
         run: |
           pip install --upgrade pip
-          pip install yaml bibtexparser jinja2
+          pip install pyyaml bibtexparser jinja2
+      
+      - name: Update APT + install TeXLive
+        run: |
+          sudo apt update
+          sudo apt install texlive-base texlive-binaries texlive-bibtex-extra texlive-font-utils texlive-fonts-extra texlive-fonts-recommended texlive-lang-english texlive-lang-european texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-plain-generic texlive-pstricks texlive-xetex
+          sudo apt update
       
       - name: Build CV
         run: |

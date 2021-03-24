@@ -28,11 +28,12 @@ all: $(PDF) $(MD)
 $(BUILD_DIR):
 	mkdir -p $(BUILD_DIR)
 
-public: $(BUILD_DIR) $(TEMPLATES) $(YAML_FILES) generate.py
-	./generate.py cv.yaml
+public: $(BUILD_DIR) $(TEMPLATES) $(YAML_FILES) scripts/generate.py
+	pipenv install
+	pipenv run python scripts/generate.py cv.yaml
 
-$(TEX) $(MD): $(TEMPLATES) $(YAML_FILES) generate.py
-	./generate.py $(YAML_FILES)
+$(TEX) $(MD): $(TEMPLATES) $(YAML_FILES) scripts/generate.py
+	pipenv run python scripts/generate.py $(YAML_FILES)
 
 $(PDF): $(TEX) publications/*.bib
 	# TODO: Hack for biber on OSX.

@@ -47,13 +47,13 @@ about: ""
 
 service:
   - title: Teaching Awards
-    details: SEAS Excellence in Teaching Award (Fall 2019)
+    details: Princeton Engineering Commendation List for Outstanding Teaching (COS 488, Spring 2020), SEAS Excellence in Teaching Award (COS 126, Fall 2019)
   - title: Int. Committees
     details: Lecturer Hiring (since 2016), Infrastructure Advisory (since 2015), Educational Software (since 2017), Industry Affiliates (since 2018)
   - title: University-level
     details: Canvas Faculty Advisory Group (since 2019), Faculty adviser for USG Labs and TigerApps (since 2015), faculty oversight of student software such as Recal, Tigerbook, TigerPath (since 2015)
   - title: BSE Fresh. Adv.
-    details: 56 students in 2015-2020
+    details: 67 students in 2015-2021
   - title: COS BSE Adv.
     details: 45 students from the BSE COS 2019 class of majors
   - title: Conference Organizer
@@ -176,7 +176,7 @@ industry:
     dates: March 2019--present
   - place: CUvids
     location: Princeton, NJ, USA
-    title: UI/UX and Software Engineering Consultant
+    title: Chief Technical Officer
     dates: August 2019--present
   - place: Inst. Nat. de Recherche en Info. et en Autom. (INRIA)
     location: Rocquencourt, France
@@ -283,7 +283,7 @@ teaching:
     name: Intro CS1 @ Princeton
     short: COS 126
     position: Co-Lead Preceptor
-  - semester: S2020
+  - semester: S2020, F2020, S2021
     name: Intro CS1 @ Princeton
     short: COS 126
     position: Code Grading Coordinator
@@ -305,6 +305,12 @@ teaching:
     position: Lead Preceptor
 
 projects:
+  - name: code{\bf Lobby}
+    url: http://codelobby.csed.io/
+    details:
+      - Research project funded by the 250th Anniversary fund, piloted in COS 126
+      - Allows students to see each other's code for mid-level stakes assessment anonymously
+      - Research will determine whether this exposure increases their code literacy
   - name: code{\bf Post}
     url: https://codepost.io
     details:

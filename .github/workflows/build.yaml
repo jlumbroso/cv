@@ -30,7 +30,7 @@ jobs:
       - name: Build CV
         run: |
           mkdir -p build
-          pipenv run python generate.py cv.yaml
+          pipenv run python scripts/generate.py cv.yaml
       
       - name: Render CV PDF
         run: |

@@ -21,7 +21,7 @@ jobs:
       
       - name: Build CV
         run: |
-          mkdir build
+          mkdir -p build
           python generate.py cv.yaml
       
       - name: Publish compiled PDF

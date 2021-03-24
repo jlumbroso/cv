@@ -13,10 +13,11 @@ jobs:
         with:
           python-version: 3.8
       
-      - name: Install dependencies with pip
+      - name: Install dependencies with pipenv
         run: |
           pip install --upgrade pip
-          pip install pyyaml bibtexparser jinja2
+          pip install pipenv
+          pipenv install --deploy --dev
       
       - name: Update APT + install TeXLive
         run: |
@@ -29,7 +30,7 @@ jobs:
       - name: Build CV
         run: |
           mkdir -p build
-          python generate.py cv.yaml
+          pipenv run python generate.py cv.yaml
       
       - name: Render CV PDF
         run: |

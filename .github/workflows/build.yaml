@@ -19,6 +19,11 @@ jobs:
         with:
           python-version: 3.8
       
+      - name: Install dependencies with pip
+        run: |
+          pip install --upgrade pip
+          pip install yaml bibtexparser jinja2
+      
       - name: Build CV
         run: |
           mkdir -p build

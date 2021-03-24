@@ -3,7 +3,7 @@ name: Build PDF of the CV
 on: [push, pull_request]
 
 jobs:
-  compile-zip:
+  compile-pdf:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -22,6 +22,7 @@ jobs:
         run: |
           sudo apt update
           sudo apt install texlive-base texlive-binaries texlive-bibtex-extra texlive-font-utils texlive-fonts-extra texlive-fonts-recommended texlive-lang-english texlive-lang-european texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-plain-generic texlive-pstricks texlive-xetex
+          sudo apt install make
           sudo apt update
       
       - name: Build CV
@@ -29,6 +30,10 @@ jobs:
           mkdir -p build
           python generate.py cv.yaml
       
+      - name: Render CV PDF
+        run: |
+          make buildpdf
+
       - name: Publish compiled PDF
         uses: "marvinpinto/action-automatic-releases@latest"
         with:

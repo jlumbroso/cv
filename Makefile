@@ -41,6 +41,9 @@ $(PDF): $(TEX) publications/*.bib
 	latexmk -pdf -cd- -jobname=$(BUILD_DIR)/cv $(BUILD_DIR)/cv
 	latexmk -c -cd $(BUILD_DIR)/cv
 
+buildpdf: $(PDF)
+	echo "Built!"
+
 viewpdf: $(PDF)
 	gnome-open $(PDF)
 

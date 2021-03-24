@@ -1,0 +1,6 @@
+
+# build folder, if ever this is built
+build/*
+
+# macOS metadata
+.DS_Store

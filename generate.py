@@ -50,8 +50,11 @@ def get_pub_md(context, config):
         formatted_authors = []
         for author in immut_author_list:
             new_auth = author.split(", ")
-            new_auth = new_auth[1][0] + ". " + new_auth[0]
-            if new_auth == config['name']:
+            if len(new_auth) > 1:
+                new_auth = new_auth[1][0] + ". " + new_auth[0]
+            else:
+                new_auth = new_auth[0]
+            if config['name'] in new_auth:
                 new_auth = "<strong>" + new_auth + "</strong>"
             formatted_authors.append(new_auth)
         return formatted_authors
@@ -131,7 +134,8 @@ def get_pub_md(context, config):
 
     def load_and_replace(bibtex_file):
         with open(os.path.join('publications', bibtex_file), 'r') as f:
-            p = BibTexParser(f.read(), bc.author).get_entry_list()
+            #p = BibTexParser(f.read(), bc.author).get_entry_list()
+            p = BibTexParser(f.read()).get_entry_list()
         for pub in p:
             for field in pub:
                 pub[field] = context.make_replacements(pub[field])

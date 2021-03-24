@@ -22,7 +22,7 @@ jobs:
         run: |
           sudo apt update
           sudo apt install texlive-base texlive-binaries texlive-bibtex-extra texlive-font-utils texlive-fonts-extra texlive-fonts-recommended texlive-lang-english texlive-lang-european texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-plain-generic texlive-pstricks texlive-xetex
-          sudo apt install make
+          sudo apt install make latexmk
           sudo apt update
       
       - name: Build CV

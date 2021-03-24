@@ -11,7 +11,8 @@ jobs:
       - name: Update APT + install TeXLive
         run: |
           sudo apt update
-          sudo apt install texlive-base texlive-binaries texlive-bibtex-extra texlive-font-utils texlive-fonts-extra texlive-fonts-recommended texlive-generic-extra texlive-generic-recommended texlive-lang-english texlive-lang-european texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-plain-extra texlive-plain-generic texlive-pstricks texlive-xetex
+          sudo apt install texlive-base texlive-binaries texlive-bibtex-extra texlive-font-utils texlive-fonts-extra texlive-fonts-recommended texlive-lang-english texlive-lang-european texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-plain-generic texlive-pstricks texlive-xetex
+          sudo apt update
 
       - name: Setup Python
         uses: actions/setup-python@v1

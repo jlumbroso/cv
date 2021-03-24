@@ -1,0 +1,33 @@
+name: Compile the student ZIP file
+
+on: [push, pull_request]
+
+jobs:
+  compile-zip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Update APT + install TeXLive
+        run: |
+          sudo apt update texlive-base texlive-binaries texlive-bibtex-extra texlive-font-utils texlive-fonts-extra texlive-fonts-recommended texlive-generic-extra texlive-generic-recommended texlive-lang-english texlive-lang-european texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-plain-extra texlive-plain-generic texlive-pstricks texlive-xetex
+
+      - name: Setup Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.8
+      
+      - name: Build CV
+        run: |
+          mkdir build
+          python generate.py cv.yaml
+      
+      - name: Publish compiled PDF
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "Latest compiled version of CV"
+          files: |
+            build/cv.pdf
